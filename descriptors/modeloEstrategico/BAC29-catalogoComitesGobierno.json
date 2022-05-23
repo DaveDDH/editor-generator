@@ -1,0 +1,45 @@
+{
+  "name": "BAC29-catalogoComitesGobierno",
+  "description": "Descripcion de un catalogo de comites de gobierno",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Comites",
+  "sections": [
+      {
+          "sectionName": "Comites",
+          "fields": [
+              {
+                "fieldName": "Nombre",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "IDs roles participantes",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+        "sectionName": "Funciones",
+        "fields": [
+            {
+                "fieldName": "Funcion",
+                "amount": "many",
+                "fields": [
+                  {
+                    "fieldName": "ID Funcion",
+                    "type": "string",
+                    "amount": "1"
+                  },
+                  {
+                    "fieldName": "Descripcion Funcion",
+                    "type": "string",
+                    "amount": "1"
+                  }
+              ]
+            }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "BAC18-catalogoIndicadoresLogro",
+  "description": "Descripcion del catalogo de indicadores de logro",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Datos base",
+  "sections": [
+      {
+          "sectionName": "Datos base",
+          "fields": [
+              {
+                  "fieldName": "ID",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Nombre",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Descripcion",
+                  "type": "string",
+                  "amount": "1"
+              }
+          ]
+      }
+  ]
+}

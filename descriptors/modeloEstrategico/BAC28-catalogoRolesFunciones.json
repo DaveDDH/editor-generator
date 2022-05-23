@@ -1,0 +1,40 @@
+{
+  "name": "BAC28-catalogoRolesFunciones",
+  "description": "Descripcion de un catalogo de roles y funciones",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Roles",
+  "sections": [
+      {
+          "sectionName": "Roles",
+          "fields": [
+              {
+                "fieldName": "Rol",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+        "sectionName": "Funciones",
+        "fields": [
+            {
+                "fieldName": "Funcion",
+                "amount": "many",
+                "fields": [
+                  {
+                    "fieldName": "ID Funcion",
+                    "type": "string",
+                    "amount": "1"
+                  },
+                  {
+                    "fieldName": "Descripcion Funcion",
+                    "type": "string",
+                    "amount": "1"
+                  }
+              ]
+            }
+        ]
+    }
+  ]
+}

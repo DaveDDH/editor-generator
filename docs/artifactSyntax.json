@@ -1,0 +1,21 @@
+{
+    "name": "Name of the artifact",
+    "version": "version of the artifact - 1.0.0",
+    "fields": [
+        {
+            "fieldName": "name of the field",
+            "amount": "number | many",
+            "type": "string"
+        },
+        {
+            "fieldName": "name of the nested set of fields",
+            "amount": "number | many",
+            "fields": [
+                {
+                    "fieldName": "name of the field",
+                    "type": "integer"
+                }
+            ]
+        }
+    ]
+}

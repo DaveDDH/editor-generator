@@ -1,0 +1,65 @@
+{
+  "name": "BAC22-catalogoAccionesEstrategicas",
+  "description": "Descripcion de un catalogo de acciones estrategicas",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Accion",
+  "sections": [
+      {
+          "sectionName": "Accion",
+          "fields": [
+              {
+                "fieldName": "ID",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Nombre",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Descripcion",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Responsable",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Fecha inicio",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Fecha fin",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+          "sectionName": "Indicadores",
+          "fields": [
+              {
+                  "fieldName": "Indicador",
+                  "amount": "many",
+                  "fields": [
+                    {
+                      "fieldName": "ID Indicador",
+                      "type": "string",
+                      "amount": "1"
+                    },
+                    {
+                      "fieldName": "Aporte Indicador",
+                      "type": "string",
+                      "amount": "1"
+                    }
+                ]
+              }
+          ]
+      }
+  ]
+}

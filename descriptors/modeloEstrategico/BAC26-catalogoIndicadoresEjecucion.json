@@ -1,0 +1,29 @@
+{
+  "name": "BAC26-catalogoIndicadoresEjecucion",
+  "description": "Descripcion de un catalogo de indicadores de ejecucion",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Indicadores de Ejecucion",
+  "sections": [
+      {
+          "sectionName": "Indicadores de Ejecucion",
+          "fields": [
+              {
+                "fieldName": "ID",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Nombre indicador",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Descripcion",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      }
+  ]
+}

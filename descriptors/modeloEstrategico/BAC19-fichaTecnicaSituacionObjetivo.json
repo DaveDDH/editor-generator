@@ -1,0 +1,50 @@
+{
+  "name": "BAC19-fichaTecnicaSituacionObjetivo",
+  "description": "Descripcion de la ficha tecnica de la situacion objetivo",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Datos base",
+  "sections": [
+      {
+          "sectionName": "Datos base",
+          "fields": [
+              {
+                  "fieldName": "Fecha",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Objetivo",
+                  "type": "string",
+                  "amount": "1"
+              }
+          ]
+      },
+      {
+          "sectionName": "Indicadores",
+          "fields": [
+              {
+                  "fieldName": "Indicador",
+                  "amount": "many",
+                  "fields": [
+                      {
+                          "fieldName": "ID Indicador",
+                          "type": "string",
+                          "amount": "1"
+                      },
+                      {
+                          "fieldName": "Valor Objetivo Indicador",
+                          "type": "string",
+                          "amount": "1"
+                      },
+                      {
+                          "fieldName": "Valor inicial fecha Indicador",
+                          "type": "string",
+                          "amount": "1"
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}

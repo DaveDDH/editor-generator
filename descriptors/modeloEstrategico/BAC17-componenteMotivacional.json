@@ -1,0 +1,65 @@
+{
+  "name": "BAC17-componenteMotivacional",
+  "description": "Descripcion del componente motivacional",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Datos base",
+  "sections": [
+      {
+          "sectionName": "Datos base",
+          "fields": [
+              {
+                  "fieldName": "Empresa",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Proposito superior",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Objetivo retador",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                "fieldName": "Vision",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Mision",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+          "sectionName": "Valores",
+          "fields": [
+              {
+                  "fieldName": "Valor",
+                  "amount": "many",
+                  "fields": [
+                      {
+                          "fieldName": "ID Valor",
+                          "type": "string",
+                          "amount": "1"
+                      },
+                      {
+                          "fieldName": "Nombre Valor",
+                          "type": "string",
+                          "amount": "1"
+                      },
+                      {
+                          "fieldName": "Descripcion Valor",
+                          "type": "string",
+                          "amount": "1"
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}

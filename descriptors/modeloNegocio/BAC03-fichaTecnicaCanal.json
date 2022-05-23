@@ -1,0 +1,60 @@
+{
+    "name": "BAC03-fichaTecnicaCanal",
+    "description": "Descripcion la ficha tecnica de un canal",
+    "version": "0.0.1",
+    "type": "bac",
+    "mainSection": "Datos base",
+    "sections": [
+        {
+            "sectionName": "Datos base",
+            "fields": [
+                {
+                    "fieldName": "ID",
+                    "type": "string",
+                    "amount": "1"
+                },
+                {
+                    "fieldName": "Nombre",
+                    "type": "string",
+                    "amount": "1"
+                },
+                {
+                    "fieldName": "Tipo",
+                    "type": "opcion1|opcion2|opcion3|ultimaopcion",
+                    "amount": "1"
+                }
+            ]
+        },
+        {
+            "sectionName": "Actividad",
+            "fields": [
+                {
+                    "fieldName": "Actividad",
+                    "amount": "many",
+                    "fields": [
+                        {
+                            "fieldName": "ID Actividad",
+                            "type": "string",
+                            "amount": "1"
+                        },
+                        {
+                            "fieldName": "Nombre Actividad",
+                            "type": "opcion1|opcion2|opcion3|ultimaopcion",
+                            "amount": "1"
+                        },
+                        {
+                            "fieldName": "Participantes Actividad",
+                            "type": "string",
+                            "amount": "1"
+                        },
+                        {
+                            "fieldName": "Recursos Actividad",
+                            "type": "string",
+                            "amount": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

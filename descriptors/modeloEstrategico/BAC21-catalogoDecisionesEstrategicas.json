@@ -1,0 +1,50 @@
+{
+  "name": "BAC21-catalogoDecisionesEstrategicas",
+  "description": "Descripcion del catalogo de decisiones estrategicas",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Intencion",
+  "sections": [
+      {
+          "sectionName": "Intencion",
+          "fields": [
+              {
+                  "fieldName": "Intencion",
+                  "type": "string",
+                  "amount": "1"
+              }
+          ]
+      },
+      {
+          "sectionName": "Decisiones",
+          "fields": [
+              {
+                  "fieldName": "Decision",
+                  "amount": "many",
+                  "fields": [
+                      {
+                          "fieldName": "ID Decision",
+                          "type": "string",
+                          "amount": "1"
+                      },
+                      {
+                          "fieldName": "Modelo Decision",
+                          "type": "string",
+                          "amount": "1"
+                      },
+                      {
+                        "fieldName": "Nombre Decision",
+                        "type": "string",
+                        "amount": "1"
+                      },
+                      {
+                        "fieldName": "Descripcion Decision",
+                        "type": "string",
+                        "amount": "1"
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}

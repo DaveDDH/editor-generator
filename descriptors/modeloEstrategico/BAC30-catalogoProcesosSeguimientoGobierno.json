@@ -1,0 +1,50 @@
+{
+  "name": "BAC30-catalogoProcesosSeguimientoGobierno",
+  "description": "Descripcion de un catalogo de procesos de seguimiento y de gobierno",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Procesos",
+  "sections": [
+      {
+          "sectionName": "Procesos",
+          "fields": [
+              {
+                "fieldName": "ID",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Nombre",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Objetivo",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+        "sectionName": "Actividades",
+        "fields": [
+            {
+                "fieldName": "Actividad",
+                "amount": "many",
+                "fields": [
+                  {
+                    "fieldName": "ID Actividad",
+                    "type": "string",
+                    "amount": "1"
+                  },
+                  {
+                    "fieldName": "Descripcion Actividad",
+                    "type": "string",
+                    "amount": "1"
+                  }
+              ]
+            }
+        ]
+    }
+  ]
+}

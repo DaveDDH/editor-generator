@@ -1,0 +1,24 @@
+{
+    "name": "BAC10-catalogoConceptos",
+    "description": "Descripcion catalogo conceptos",
+    "version": "0.0.1",
+    "type": "bac",
+    "mainSection": "Datos base",
+    "sections": [
+        {
+            "sectionName": "Datos base",
+            "fields": [
+                {
+                    "fieldName": "Nombre",
+                    "type": "string",
+                    "amount": "1"
+                },
+                {
+                    "fieldName": "Descripcion",
+                    "type": "string",
+                    "amount": "1"
+                }
+            ]
+        }
+    ]
+}

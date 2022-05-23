@@ -1,0 +1,85 @@
+{
+  "name": "BAC23-fichaTecnicaAccionEstrategica",
+  "description": "Descripcion de una ficha tecnica de una accion estrategica",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Accion",
+  "sections": [
+      {
+          "sectionName": "Accion",
+          "fields": [
+              {
+                "fieldName": "ID",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Nombre",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "IDs indicadores ejecucion",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "IDs acciones prerrequisito",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "Costo",
+                "type": "string",
+                "amount": "1"
+              },
+              {
+                "fieldName": "ID del proyecto",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+          "sectionName": "Acciones tacticas",
+          "fields": [
+              {
+                  "fieldName": "Accion Tactica",
+                  "amount": "many",
+                  "fields": [
+                    {
+                      "fieldName": "ID Accion Tactica",
+                      "type": "string",
+                      "amount": "1"
+                    },
+                    {
+                      "fieldName": "Nombre Accion Tactica",
+                      "type": "string",
+                      "amount": "1"
+                    },
+                    {
+                      "fieldName": "Descripcion Accion Tactica",
+                      "type": "string",
+                      "amount": "1"
+                    },
+                    {
+                      "fieldName": "Responsable Accion Tactica",
+                      "type": "string",
+                      "amount": "1"
+                    },
+                    {
+                      "fieldName": "Fecha inicio Accion Tactica",
+                      "type": "string",
+                      "amount": "1"
+                    },
+                    {
+                      "fieldName": "Fecha fin Accion Tactica",
+                      "type": "string",
+                      "amount": "1"
+                    }
+                ]
+              }
+          ]
+      }
+  ]
+}

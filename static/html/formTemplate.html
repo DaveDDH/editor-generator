@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Tesis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Tesis.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="./main.css" rel="stylesheet">
+    <style>
+        .largeMarginTop {
+            margin-top: 10px;
+        }
+        .sectionTitle {
+            color: green;
+            font-size: 14px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <script>const mDataToPopulate = [];const mMainSections = {};const mFileIds = [];</script>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>
+            <div class="app-header__content">
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        User
+                                    </div>
+                                    <div class="widget-subheading">
+                                        Role
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src">
+                    </div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading">Home</li>
+                            <li>
+                                <a href="index.html">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    Platform
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Artifacts</li>
+                            {{forms}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                                    </i>
+                                </div>
+                                <div>{{name}}
+                                    <div class="page-title-subheading">{{description}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    {{content}}
+
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script> 
+                    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script> 
+                    <script>
+
+                        const mFormName = '{{formName}}';
+
+                        const firebaseConfig = {
+                          apiKey: "AIzaSyBLK_kbIlF9p4n-kg3wGwZTYvY8ucsR_VA",
+                          authDomain: "tesis-ebf9d.firebaseapp.com",
+                          databaseURL: "https://tesis-ebf9d-default-rtdb.firebaseio.com",
+                          projectId: "tesis-ebf9d",
+                          storageBucket: "tesis-ebf9d.appspot.com",
+                          messagingSenderId: "670579229757",
+                          appId: "1:670579229757:web:f761491a40cdcf4f049654"
+                        };
+
+                        firebase.initializeApp(firebaseConfig);
+
+                        const database = firebase.database();
+                        const storage = firebase.storage();
+
+                        const mBaseURL = 'http://localhost:8080/api';
+
+                        console.log('on form');
+
+                        const mFormTemplate = '<div class="position-relative form-group"><label for="{{fieldID}}" class="">{{fieldName}}</label><input name="{{fieldID}}" id="{{fieldID}}" placeholder="{{placeholder}}" type="text" class="form-control"></div>';
+                        
+                        const mNum = {};
+
+                        let mKey = null;
+
+                        const mData = {};
+
+                        const mCounters = {};
+
+                        function addNewField(mContent, sectionName) {
+                            if (mCounters[sectionName] == undefined) mCounters[sectionName] = 0;
+                            mCounters[sectionName]++;
+                            const currentCount = mCounters[sectionName];
+                            const data = JSON.parse(mContent);
+                            let template = '<div class="position-relative form-group"><label for="{{fieldID}}" class="">{{fieldName}}</label><input parentSection="{{sectionName}}" name="{{fieldID}}" id="{{fieldID}}" placeholder="{{placeholder}}" type="text" class="form-control"></div>';
+                            let templateSelect = '<div class="position-relative form-group"><label for="{{fieldID}}" class="">{{fieldName}}</label><select parentSection="{{sectionName}}" name="{{fieldID}}" id="{{fieldID}}" class="form-control">{{formOptions}}</select></div>'
+                            let html = '<div class="sectionTitle">' + sectionName + ' ' + mCounters[sectionName] + '</div><div class="largeMarginTop">';
+                            const mFields = data['fields'];
+                            for (const field in mFields) {
+                                const mField = mFields[field];
+                                const mType = mField['type'];
+                                const mName = mField['fieldName'];
+                                let mmHtml = '';
+                                if (mType.indexOf('|') != - 1) {
+                                    let mHtml = templateSelect;
+                                    mHtml = mHtml.replaceAll('{{fieldID}}', mName + ' ' + currentCount);
+                                    mHtml = mHtml.replaceAll('{{fieldName}}', mName + ' ' + currentCount);
+                                    mHtml = mHtml.replaceAll('{{sectionName}}', sectionName + '@many');
+                                    const mSplit = mType.split('|');
+                                    let formOptions = '';
+                                    for (const mmkey in mSplit) {
+                                        formOptions += "<option>" + mSplit[mmkey] + "</option>"
+                                    }                                    
+                                    mHtml = mHtml.replace("{{formOptions}}", formOptions)
+                                    mmHtml = mHtml;
+                                } else {
+                                    let mHtml = template;
+                                    mHtml = mHtml.replaceAll('{{fieldID}}', mName + ' ' + currentCount);
+                                    mHtml = mHtml.replaceAll('{{fieldName}}', mName + ' ' + currentCount);
+                                    mHtml = mHtml.replaceAll('{{sectionName}}', sectionName + '@many');
+                                    mHtml = mHtml.replace("{{placeholder}}", mName);
+                                    mmHtml = mHtml;
+                                }
+                                html += mmHtml;
+                            }
+                            html += '</div>';
+                            const parent = document.getElementById('form' + sectionName);
+                            parent.innerHTML += html;
+                            $('.form-control').change(updateMemoryData);
+                        }
+
+                        function removeField(id) {
+                        }
+
+                        function sendData(name, section) {
+                            if (mKey == null) {
+                                mKey = database.ref('pushes/').push().key;
+                            }
+                            const mName = name.replaceAll(".", "-");
+                            const myData = mData[section];
+                            const mFiles = {};
+                            for (let key in myData) {
+                                if (typeof myData[key] == 'object' && myData[key].constructor.name == 'File') {
+                                    mFiles[key] = myData[key];
+                                }
+                            }
+                            const mKeys = Object.keys(mFiles);
+                            if (mKeys.length > 0) {
+                                const ref = firebase.storage().ref();
+                                for (let mmKey in mKeys) {
+                                    const mFile = mFiles[mKeys[mmKey]];
+                                    const metadata = { contentType: mFile.type };
+                                    const task = ref.child(mName + '/' + section + '/' + mKeys[mmKey]).put(mFile, metadata);
+                                    task.then(snapshot => snapshot.ref.getDownloadURL()).then((url) => {
+                                        const mUrl = url;
+                                        myData[mKeys[mmKey]] = mUrl;
+                                        database.ref('generated/' + mName + '/' + mKey + '/' + section).set(myData);
+                                        alert('Saved');
+                                    });
+                                }
+                            } else {
+                                database.ref('generated/' + mName + '/' + mKey + '/' + section).set(myData);
+                                const mmDataa = {
+                                    path: 'generated/' + mName + '/' + mKey + '/' + section,
+                                    data: myData
+                                };
+                                $.post(mBaseURL, mmDataa, function(data, status) {
+                                    console.log(status);
+                                    console.log(data);
+                                });
+                                alert('Saved');
+                            }
+                        }
+
+                        function updateMemoryData() {
+                            const mItem = this;
+                            
+                            const mSection = mItem.getAttribute('parentsection');
+                            let tSection = mSection;
+                            const mToken = '@many';
+                            const mIndex = mSection.indexOf(mToken);
+                            
+                            const id = mItem.id;
+                            const mItemDom = document.getElementById(id);
+                            const val = mItemDom.value;
+                            const mName = id.replaceAll(".", "-");
+                            if (mIndex !== -1 && mIndex == mSection.length - mToken.length) {
+                                tSection = mSection.substring(0, mSection.length - mToken.length);
+                            }
+                            if (mData[tSection] == undefined) {
+                                mData[tSection] = {};
+                            }
+                            if (mIndex !== -1 && mIndex == mSection.length - mToken.length) {
+                                const mArr = id.split(' ');
+                                const mId = mArr[mArr.length - 1];
+                                if (mData[tSection][mId] == undefined) {
+                                    mData[tSection][mId] = {};
+                                }
+                                console.log(id);
+                                console.log(mId);
+                                if (mItem.type == 'file') {
+                                    const file = document.querySelector('#' + id).files[0];
+                                    mData[tSection][mId]['' + mName] = file;
+                                } else {
+                                    mData[tSection][mId]['' + mName] = val;
+                                }
+                            } else {
+                                if (mItem.type == 'file') {
+                                    const file = document.querySelector('#' + id).files[0];
+                                    mData[tSection]['' + mName] = file;
+                                } else {
+                                    mData[tSection]['' + mName] = val;
+                                }
+                            }
+                            console.log(mData);
+                        }
+                        
+                        $(document).ready(function() {
+                            $('.form-control').change(updateMemoryData);
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function retrieveOptionListFromDatabase(name, property, sect) {
+            const mId = name + '.' + property;
+            database.ref('/generated/' + name).once('value').then((snapshot) => {
+                const data = snapshot.val();
+                let mHtml = '<option value="" selected disabled hidden>Choose an option</option>';
+                const mData = [];
+                for (const key in data) {
+                    const mItem = data[key];
+                    mData.push(mItem[sect]);
+                }
+                for (const key in mData) {
+                    const mItem = mData[key];
+                    mHtml += '<option>' + mItem[property] + '</option>';
+                }
+                document.getElementById(mId).innerHTML = mHtml;
+                let boo = false;
+                for (const key in data) {
+                    if (!boo) {
+                        boo = true;
+                        const mItem = data[key];
+                        document.getElementById(mId).val = mItem[property];
+                    }
+                }
+            });
+        }
+
+        const mLItems = mDataToPopulate.length;
+        for (let i = 0; i < mLItems; i++) {
+            const mItemRaw = mDataToPopulate[i];
+            const mItemSplitted = mItemRaw.split(':');
+            const mItem = mItemSplitted[0];
+            const mItemPart = mItem.split('.');
+            const mSectionNameItem = mItemPart[1];
+            retrieveOptionListFromDatabase(mItemPart[0], mItemPart[1], mItemSplitted[1]);
+        }
+
+        console.log(mMainSections);
+
+        
+    </script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

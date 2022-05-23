@@ -1,0 +1,34 @@
+{
+  "name": "BAC25-grafoDependencias",
+  "description": "Grafo de dependencias",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Datos base",
+  "sections": [
+      {
+          "sectionName": "Datos base",
+          "fields": [
+              {
+                  "fieldName": "Negocio",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Autor",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                  "fieldName": "Fecha",
+                  "type": "string",
+                  "amount": "1"
+              },
+              {
+                "fieldName": "Diagrama",
+                "type": "file/.jpg,.png,.jpeg",
+                "amount": "1"
+            }
+          ]
+      }
+  ]
+}

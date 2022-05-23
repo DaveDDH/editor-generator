@@ -1,0 +1,34 @@
+{
+    "name": "BAC06-catalogoComponentes",
+    "description": "Descripcion catalogo componentes",
+    "version": "0.0.1",
+    "type": "bac",
+    "mainSection": "Datos base",
+    "sections": [
+        {
+            "sectionName": "Datos base",
+            "fields": [
+                {
+                    "fieldName": "Nombre",
+                    "type": "string",
+                    "amount": "1"
+                },
+                {
+                    "fieldName": "Descripcion",
+                    "type": "string",
+                    "amount": "1"
+                },
+                {
+                    "fieldName": "Tipo",
+                    "type": "tipo1|tipo2",
+                    "amount": "1"
+                },
+                {
+                    "fieldName": "Contenido",
+                    "type": "string",
+                    "amount": "1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Query de prueba",
+  "description": "Descripcion de la query de prueba",
+  "version": "0.0.1",
+  "type": "query",
+  "query": "SELECT * FROM ?"
+}

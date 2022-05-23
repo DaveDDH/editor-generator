@@ -1,0 +1,50 @@
+{
+  "name": "BAC27-tableroControlEjecucion",
+  "description": "Descripcion de un tablero de control de ejecucion",
+  "version": "0.0.1",
+  "type": "bac",
+  "mainSection": "Acciones",
+  "sections": [
+      {
+          "sectionName": "Acciones",
+          "fields": [
+              {
+                "fieldName": "ID Accion",
+                "type": "string",
+                "amount": "1"
+              }
+          ]
+      },
+      {
+        "sectionName": "Indicadores",
+        "fields": [
+            {
+                "fieldName": "Indicador",
+                "amount": "many",
+                "fields": [
+                  {
+                    "fieldName": "ID Indicador",
+                    "type": "string",
+                    "amount": "1"
+                  },
+                  {
+                    "fieldName": "Valor Actual Indicador",
+                    "type": "string",
+                    "amount": "1"
+                  },
+                  {
+                    "fieldName": "Valor Esperado Indicador",
+                    "type": "string",
+                    "amount": "1"
+                  },
+                  {
+                    "fieldName": "Estado Indicador",
+                    "type": "string",
+                    "amount": "1"
+                  }
+              ]
+            }
+        ]
+    }
+  ]
+}
